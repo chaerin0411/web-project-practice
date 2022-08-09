@@ -1,0 +1,18 @@
+﻿<%@ page contentType="text/html; charset=utf-8" %>
+<%
+	String id = request.getParameter("id");
+	if (id.equals("dong")) {
+		session.setAttribute("MEMBERID", id);
+		session.setAttribute("NAME", "김동양");
+		response.sendRedirect("02loginForm.jsp");
+	} else {
+%>
+<html>
+<head><title>로그인에 실패</title></head>
+<body>
+잘못된 아이디입니다.
+</body>
+</html>
+<%
+	}
+%>

@@ -1,0 +1,7 @@
+CREATE TABLE `memberTbl` (
+  `memberid` varchar(50) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `name` varchar(10) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`memberid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

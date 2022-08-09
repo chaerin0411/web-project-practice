@@ -1,0 +1,1 @@
+<% response.sendRedirect("03page_control_end.jsp"); %>
